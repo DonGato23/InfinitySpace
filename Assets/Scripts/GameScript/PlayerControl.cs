@@ -140,7 +140,8 @@ public class PlayerControl : MonoBehaviour {
     public void Dead() {
         _animator.enabled = true;
         GetComponent<CircleCollider2D>().enabled = false;
-        transform.GetChild(2).gameObject.SetActive(false); // damage
+        //transform.GetChild(1).gameObject.SetActive(false); // damage
+        transform.GetChild(1).GetComponent<DamageScript>().ChangeSprite(0);
         this.enabled = false;
         if(!StageManager.GameOver)
             Invoke("RestLive", 1.5f);
