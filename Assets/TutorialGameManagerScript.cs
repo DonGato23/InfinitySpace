@@ -27,7 +27,7 @@ public class TutorialGameManagerScript : MonoBehaviour
         if (ActionNumber == 0)
         {
             TitleActionText.text = "Move";
-            MessageText.text = "Select the ship and slide your finger to your target.";
+            MessageText.text = "touch wherever the ship moves.";
         }
         if (ActionNumber == 1)
         {
